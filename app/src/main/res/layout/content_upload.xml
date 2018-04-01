@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.idaayuanila_1202150280_modul6.Upload"
+    tools:showIn="@layout/activity_upload">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="500dp"
+        android:layout_height="180dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/choose"
+        android:onClick="Choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/write"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:text="CHOOSE" />
+
+    <EditText
+        android:id="@+id/write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="139dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Write Your Post..." />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/write"
+        android:layout_alignEnd="@+id/write"
+        android:layout_alignRight="@+id/write"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Title" />
+
+
+</RelativeLayout>
